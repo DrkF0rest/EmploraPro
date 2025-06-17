@@ -50,8 +50,6 @@ $conn->query("INSERT INTO log_activity (user_id, activity) VALUES ($user_id, '$a
                 
         <div class="card">
             <a href="tambah_karyawan.php" class="btn">Tambah Karyawan</a>
-            <?php while ($row = $karyawan->fetch_assoc()): ?>
-            <a href="cuti_detail.php?id=<?= $row['id'] ?>" class="btn-outline">Lihat Riwayat Cuti</a>
             <table class="table">
                 <thead>
                     <tr>
@@ -63,6 +61,7 @@ $conn->query("INSERT INTO log_activity (user_id, activity) VALUES ($user_id, '$a
                     </tr>
                 </thead>
                     <tbody>
+                        <?php while ($row = $karyawan->fetch_assoc()): ?>
                             <tr>
                                 <td><?= $row['id'] ?></td>
                                 <td><?= $row['username'] ?></td>
@@ -72,6 +71,7 @@ $conn->query("INSERT INTO log_activity (user_id, activity) VALUES ($user_id, '$a
                                     <td>
                                         <a href="edit_karyawan.php?id=<?= $row['id'] ?>" class="btn">Edit</a>
                                         <a href="hapus_karyawan.php?id=<?= $row['id'] ?>" class="btn-outline" onclick="return confirm('Yakin ingin menghapus?')">Hapus</a>
+                                        <a href="cuti_detail.php?id=<?= $row['id'] ?>" class="btn-outline">Lihat Riwayat Cuti</a>
                                     </td>
                                 </div>
                                 </tr>
