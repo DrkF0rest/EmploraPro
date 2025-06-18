@@ -2,34 +2,27 @@
 
 ---
 
-EmploraPro adalah aplikasi web sederhana yang dikembangkan sebagai proyek pertama saya dalam mempelajari pengembangan web. Aplikasi ini dirancang dengan fokus pada penerapan fitur CRUD (Create, Read, Update, Delete) serta tampilan antarmuka (UI) dan pengalaman pengguna (UX) yang baik.
+EmploraPro adalah aplikasi web sederhana yang dikembangkan sebagai proyek pertama saya dalam belajar pengembangan web. Aplikasi ini dirancang dengan fokus pada penerapan fitur CRUD (Create, Read, Update, Delete) serta antarmuka pengguna (UI) dan pengalaman pengguna (UX) yang baik.
 
 ---
 
-<h4>✨ Fitur Unggulan</h2>
+<h3>✨ Feature</h3>
 
-- CRUD Lengkap
-- Pengguna dapat menambahkan, melihat, mengedit, dan menghapus data dengan mudah.
-- Desain UI/UX yang Intuitif
-- Antarmuka dirancang agar mudah digunakan dan nyaman diakses oleh pengguna.
-- Responsif
-- Tampilan menyesuaikan dengan berbagai ukuran layar, baik di desktop maupun perangkat mobile.
-
-<h4>🎯 Tujuan Proyek</h2>
-
-- Menerapkan konsep dasar pengembangan aplikasi web
-- Meningkatkan pemahaman tentang fitur CRUD
-- Melatih kemampuan desain UI/UX
-- Menjadi awal dari portofolio pribadi di bidang pengembangan web
+- **Fungsi CRUD Lengkap**<br>Pengguna dapat dengan mudah menambah, melihat, mengedit, dan menghapus data.
+- **Desain UI/UX Intuitif**<br>Antarmuka dirancang agar mudah digunakan dan nyaman untuk dinavigasi.
+- **Tata Letak Responsif**<br>Tampilan menyesuaikan berbagai ukuran layar, baik di desktop maupun perangkat mobile.
 
 ---
 
-<h4>Cara Install</h2>
+<h3>How To Install</h3>
 
-- Copy semua file di folder **Application** ke host
-- buat database **sistem_karyawan** dan import database
+- Salin semua file dari folder **Application** ke direktori hosting Anda (misal: XAMPP/htdocs).
+- Buat database dengan nama **sistem_karyawan**.
+- Impor file database **(Sistem_Karyawan.sql)** ke dalam database menggunakan phpMyAdmin atau alat serupa.
+- Jalankan aplikasi melalui browser: **http://[domain-anda]/[nama-folder]**
+- Login **Username: admin Password: admin**
 
-<h2 align="left">Made With</h2>
+<h3 align="left">Made With</h3>
 
 <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="40" alt="php logo"  />

@@ -56,14 +56,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <input type="password" id="password" name="password" required>
                 </div>
                 
-                <button type="submit" class="btn">Login</button>
+                <button type="submit">Login</button>
             </form>
+        </div>
+        <div class="login-footer">
+            <p>&copy; <?php echo date('Y'); ?> EmploraPro. Hak Cipta Dilindungi.</p>
         </div>
     </div>
 </body>
-<footer class="site-footer">
-    <div class="container">
-        <p>&copy; <?php echo date('Y'); ?> EmploraPro. Hak Cipta Dilindungi.</p>
-    </div>
-</footer>
 </html>

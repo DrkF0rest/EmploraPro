@@ -40,15 +40,13 @@ $conn->query("INSERT INTO log_activity (user_id, activity) VALUES ($user_id, '$a
     </nav>
 
     <div class="container">
-        <div class="card-header">
-            <h2>Data Karyawan</h2>
-        </div>
-            
-            <?php if (isset($_GET['success'])): ?>
-                <div class="alert success"><?= $_GET['success'] ?></div>
-                <?php endif; ?>
-                
+        <?php if (isset($_GET['success'])): ?>
+            <div class="alert success"><?= $_GET['success'] ?></div>
+            <?php endif; ?>
         <div class="card">
+            <div class="card-header">
+                <h2>Data Karyawan</h2>
+            </div>
             <a href="tambah_karyawan.php" class="btn">Tambah Karyawan</a>
             <table class="table">
                 <thead>
@@ -67,19 +65,26 @@ $conn->query("INSERT INTO log_activity (user_id, activity) VALUES ($user_id, '$a
                                 <td><?= $row['username'] ?></td>
                                 <td><?= $row['nama_lengkap'] ?></td>
                                 <td><?= date('d M Y', strtotime($row['created_at'])) ?></td>
-                                <div class="act-btn">    
-                                    <td>
-                                        <a href="edit_karyawan.php?id=<?= $row['id'] ?>" class="btn">Edit</a>
-                                        <a href="hapus_karyawan.php?id=<?= $row['id'] ?>" class="btn-outline" onclick="return confirm('Yakin ingin menghapus?')">Hapus</a>
-                                        <a href="cuti_detail.php?id=<?= $row['id'] ?>" class="btn-outline">Lihat Riwayat Cuti</a>
-                                    </td>
-                                </div>
-                                </tr>
-                            <?php endwhile; ?>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+                                <td>
+                                    <a href="edit_karyawan.php?id=<?= $row['id'] ?>" class="btn">Edit</a>
+                                    <a href="hapus_karyawan.php?id=<?= $row['id'] ?>" class="btn-outline" onclick="return confirm('Yakin ingin menghapus?')">Hapus</a>
+                                    <a href="cuti_detail.php?id=<?= $row['id'] ?>" class="btn-outline">Lihat Riwayat Cuti</a>
+                                
+                                    <button class="td-btn">
+                                        <span class="td-line"></span>
+                                        <span class="td-line"></span>
+                                        <span class="td-line"></span>
+                                    </button>
+                                    <div class="td-content">
+                                        <a href="edit_karyawan.php?id=<?= $row['id'] ?>">Edit</a>
+                                        <a href="hapus_karyawan.php?id=<?= $row['id'] ?>" onclick="return confirm('Yakin ingin menghapus?')">Hapus</a>
+                                        <a href="cuti_detail.php?id=<?= $row['id'] ?>">Lihat Riwayat Cuti</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        <?php endwhile; ?>
+                    </tbody>
+            </table>
         </div>
     </div>
 </body>

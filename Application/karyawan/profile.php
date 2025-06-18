@@ -154,7 +154,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['upload_foto'])) {
                         <input type="file" name="foto_profil" id="foto_profil" accept="image/*" required>
                         <label for="foto_profil">Pilih Foto</label>
                         <span class="file-name">Belum ada file dipilih</span>
-                        <button type="submit" name="upload_foto" class="btn">Upload Foto</button>
+                        <button type="submit" name="upload_foto">Upload Foto</button>
                     </form>
                 </div>
                 
@@ -170,7 +170,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['upload_foto'])) {
                             <input type="text" id="nama_lengkap" name="nama_lengkap" value="<?= $user['nama_lengkap'] ?>" required>
                         </div>
                         
-                        <button type="submit" name="update_profile" class="btn">Simpan Perubahan</button>
+                        <button type="submit" name="update_profile">Simpan Perubahan</button>
                     </form>
                 </div>
             </div>
@@ -197,7 +197,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['upload_foto'])) {
                     <input type="password" id="konfirmasi_password" name="konfirmasi_password" required>
                 </div>
                 
-                <button type="submit" name="update_password" class="btn">Ubah Password</button>
+                <button type="submit" name="update_password">Ubah Password</button>
             </form>
         </div>
     </div>

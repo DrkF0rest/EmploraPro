@@ -72,16 +72,18 @@ $_SESSION['log_app_id'] = $conn->insert_id;
                     <a href="cuti.php" class="btn-outline">Lihat Semua</a>
                 </div>
                 
-                <?php if ($cuti_terakhir): ?>
-                <p>
-                    <strong>Tanggal:</strong> <?= date('d M Y', strtotime($cuti_terakhir['tanggal_mulai'])) ?> - <?= date('d M Y', strtotime($cuti_terakhir['tanggal_selesai'])) ?>
-                </p>
-                <p>
-                    <strong>Alasan:</strong> <?= $cuti_terakhir['alasan'] ?>
-                </p>
-                <?php else: ?>
-                <p>Anda belum pernah mengajukan cuti</p>
-                <?php endif; ?>
+                <div class="cutiLog">
+                    <?php if ($cuti_terakhir): ?>
+                    <p>
+                        <strong>Tanggal:</strong> <?= date('d M Y', strtotime($cuti_terakhir['tanggal_mulai'])) ?> - <?= date('d M Y', strtotime($cuti_terakhir['tanggal_selesai'])) ?>
+                    </p>
+                    <p>
+                        <strong>Alasan:</strong> <?= $cuti_terakhir['alasan'] ?>
+                    </p>
+                    <?php else: ?>
+                    <p>Anda belum pernah mengajukan cuti</p>
+                    <?php endif; ?>
+                </div>
                 
                 <a href="cuti.php" class="btn">Ajukan Cuti Baru</a>
             </div>

@@ -70,7 +70,7 @@ $today_absensi = $conn->query($query)->fetch_assoc();
 </head>
 <body>
     <nav class="navbar">
-        <h1>Sistem Karyawan</h1>
+        <h1>EmploraPro</h1>
             <button class="burger-btn" id="burgerBtn">
                 <span class="burger-line"></span>
                 <span class="burger-line"></span>
@@ -98,7 +98,7 @@ $today_absensi = $conn->query($query)->fetch_assoc();
         
         <div class="card">
             <div class="card-header">
-                <h3>Absensi Hari Ini</h3>
+                <h2>Absensi Hari Ini</h2>
             </div>
             
             <div class="card-body">
@@ -115,7 +115,7 @@ $today_absensi = $conn->query($query)->fetch_assoc();
                 <div class="absensi-actions">
                 <?php if (!$absensi_hari_ini): ?>
                     <form method="POST">
-                    <button type="submit" name="check_in" class="btn">
+                    <button type="submit" name="check_in">
                         <i class="fas fa-fingerprint"></i> Check-in
                     </button>
                     </form>

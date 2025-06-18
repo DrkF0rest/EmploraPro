@@ -76,7 +76,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <div class="card">
             <div class="card-header">
                 <h2>Tambah Karyawan Baru</h2>
-                <a href="karyawan.php" class="btn-outline">Kembali</a>
             </div>
             
             <?php if ($error): ?>
@@ -117,8 +116,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <label for="tanggal_masuk">Tanggal Masuk</label>
                     <input type="date" id="tanggal_masuk" name="tanggal_masuk" required>
                 </div>
-                
-                <button type="submit" class="btn">Simpan</button>
+                    <button type="submit">Simpan</button>
+                    <a href="karyawan.php" class="btn-outline">Kembali</a>
             </form>
         </div>
     </div>

@@ -47,7 +47,7 @@ $daftar_cuti = $conn->query($query);
 </head>
 <body>
     <nav class="navbar">
-        <h1>Sistem Karyawan</h1>
+        <h1>EmploraPro</h1>
             <button class="burger-btn" id="burgerBtn">
                 <span class="burger-line"></span>
                 <span class="burger-line"></span>
@@ -92,7 +92,7 @@ $daftar_cuti = $conn->query($query);
                     <textarea id="alasan" name="alasan" rows="3" required></textarea>
                 </div>
                 
-                <button type="submit" name="ajukan_cuti" class="btn">Ajukan Cuti</button>
+                <button type="submit" name="ajukan_cuti">Ajukan Cuti</button>
             </form>
         </div>
         

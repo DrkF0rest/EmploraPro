@@ -59,7 +59,6 @@ $users = $conn->query("SELECT id, username, nama_lengkap FROM users ORDER BY nam
             <div class="card-header">
                 <h2>Log Activity</h2>
             </div>
-            
             <form method="GET" class="filter-form">
                 <div class="form-group">
                     <label for="user">Filter User</label>

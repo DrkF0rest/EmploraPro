@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jun 17, 2025 at 12:07 PM
+-- Generation Time: Jun 18, 2025 at 03:30 PM
 -- Server version: 8.4.3
 -- PHP Version: 8.3.16
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `sistem_karyawan`
+-- Database: `karyawan`
 --
 
 -- --------------------------------------------------------
@@ -114,7 +114,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `role`, `nama_lengkap`, `profile_picture`, `created_at`) VALUES
-(1, 'admin', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'admin', 'Administrator', NULL, '2025-06-17 12:06:39');
+(1, 'admin', '$2y$10$oAfuzrq3y8gy/I/ooiFZ1.oNl1MLuRSN465FIiMZOqz5LmxzEaX4i', 'admin', 'Administrator', NULL, '2025-06-17 12:06:39');
 
 --
 -- Indexes for dumped tables
