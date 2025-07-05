@@ -1,11 +1,11 @@
-# EmploraPro {:.no_toc}
+# EmploraPro
 
 > [!NOTE]
 >EmploraPro adalah aplikasi web sederhana yang dikembangkan sebagai proyek pertama saya dalam belajar pengembangan web. Aplikasi ini dirancang dengan fokus pada penerapan fitur CRUD (Create, Read, Update, Delete) serta antarmuka pengguna (UI) dan pengalaman pengguna (UX) yang baik.
 
 ---
 
-## Feature {:.no_toc}
+## Feature
 
 - **Fungsi CRUD Lengkap**<br>Pengguna dapat dengan mudah menambah, melihat, mengedit, dan menghapus data.
 - **Desain UI/UX Intuitif**<br>Antarmuka dirancang agar mudah digunakan dan nyaman untuk dinavigasi.
@@ -13,16 +13,16 @@
 
 ---
 
-### How To Install {:.no_toc}
+### How To Install
 
 #### Local Desktop Environtment
-- Salin semua file dari folder **Application** ke direktori hosting Anda (misal: XAMPP/htdocs).
-- Buat database dengan nama **sistem_karyawan**.
-- Impor file database **(Sistem_Karyawan.sql)** ke dalam database menggunakan phpMyAdmin atau alat serupa.
-- Jalankan aplikasi melalui browser: **http://[domain-anda]/[nama-folder]**
-- Login **Username: admin Password: admin**
+1. Salin semua file dari folder **Application** ke direktori hosting Anda (misal: XAMPP/htdocs).
+2. Buat database dengan nama **sistem_karyawan**.
+3. Impor file database **(Sistem_Karyawan.sql)** ke dalam database menggunakan phpMyAdmin atau alat serupa.
+4. Jalankan aplikasi melalui browser: **http://[domain-anda]/[nama-folder]**
+5. Login **Username: admin Password: admin**
 
-#### Docker {:.no_toc}
+#### Docker
  
 1. Clone repository:
     ```bash
@@ -38,16 +38,17 @@
     <br>
 > [!IMPORTANT]
 > 3. Impor file database **(Sistem_Karyawan.sql)** ke dalam database menggunakan phpMyAdmin
-
-> [!TIP]
-> - Jika anda ingin membuat password edit pada config.php
+> - Jika anda ingin membuat password pada database edit pada config.php
 > - Jika anda menggunakan docker tambahkan juga pada docker-compose.yaml
 
-#### Akses Aplikasi {:.no_toc}
+  4. Login **Username: admin Password: admin**
 
-Aplikasi  :	**http://[domain-anda]**<br>phpmyadmin  :	**http:// [domain-anda]:8080**	user: root, password: (kosong/disesuaikan)
+#### Akses Aplikasi
+
+>[!TIP]
+>Aplikasi  :	**http://[domain-anda]**<br>phpmyadmin  :	**http:// [domain-anda]:8080**	user: root, password: (kosong/disesuaikan)
 
 ---
-## Made With {:.no_toc}
+## Made With
 
 ![My Skills](https://skillicons.dev/icons?i=php,js,mysql,html,css,docker)
