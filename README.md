@@ -1,11 +1,11 @@
-# EmploraPro
+# EmploraPro {:.no_toc}
 
 > [!NOTE]
 >EmploraPro adalah aplikasi web sederhana yang dikembangkan sebagai proyek pertama saya dalam belajar pengembangan web. Aplikasi ini dirancang dengan fokus pada penerapan fitur CRUD (Create, Read, Update, Delete) serta antarmuka pengguna (UI) dan pengalaman pengguna (UX) yang baik.
 
 ---
 
-## Feature
+## Feature {:.no_toc}
 
 - **Fungsi CRUD Lengkap**<br>Pengguna dapat dengan mudah menambah, melihat, mengedit, dan menghapus data.
 - **Desain UI/UX Intuitif**<br>Antarmuka dirancang agar mudah digunakan dan nyaman untuk dinavigasi.
@@ -13,7 +13,7 @@
 
 ---
 
-### How To Install
+### How To Install {:.no_toc}
 
 #### Local Desktop Environtment
 - Salin semua file dari folder **Application** ke direktori hosting Anda (misal: XAMPP/htdocs).
@@ -22,8 +22,8 @@
 - Jalankan aplikasi melalui browser: **http://[domain-anda]/[nama-folder]**
 - Login **Username: admin Password: admin**
 
-#### Docker
-
+#### Docker {:.no_toc}
+ 
 1. Clone repository:
     ```bash
     git clone https://github.com/username/sistem-karyawan.git
@@ -43,12 +43,11 @@
 > - Jika anda ingin membuat password edit pada config.php
 > - Jika anda menggunakan docker tambahkan juga pada docker-compose.yaml
 
-#### Akses Aplikasi
+#### Akses Aplikasi {:.no_toc}
 
-Aplikasi  :	**http://[domain-anda]**
-phpmyadmin  :	**http:// [domain-anda]:8080**	user: root, password: (kosong/disesuaikan)
+Aplikasi  :	**http://[domain-anda]**<br>phpmyadmin  :	**http:// [domain-anda]:8080**	user: root, password: (kosong/disesuaikan)
 
 ---
-## Made With
+## Made With {:.no_toc}
 
-![My Skills](https://skillicons.dev/icons?i=php,js,html,css,docker)
+![My Skills](https://skillicons.dev/icons?i=php,js,mysql,html,css,docker)

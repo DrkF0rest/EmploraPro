@@ -1,4 +1,4 @@
-services:
+services: 
   nginx:
     image: nginx:latest
     container_name: nginx
@@ -6,8 +6,8 @@ services:
     environment:
       - DB_HOST=database
       - DB_USER=root
-      - DB_PASSWORD=thunderst0rm
-      - DB_NAME=database
+      - DB_PASS='' # samakan dengan database
+      - DB_NAME=sistem_karyawan
     ports:
       - "80:80"
     volumes:
@@ -15,7 +15,7 @@ services:
       - ./nginx:/etc/nginx/conf.d
     depends_on:
       - php
-      - database
+
 
   php:
     build:
@@ -27,28 +27,34 @@ services:
     environment:
       - DB_HOST=database
       - DB_USER=root
-      - DB_PASSWORD=thunderst0rm
-      - DB_NAME=database
+      - DB_PASS='' # samakan dengan database
+      - DB_NAME=sistem_karyawan
 
   database:
-    container_name: mysql-server
-    image: mysql
+    container_name: database
+    image: mysql:latest
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: thunderst0rm
+      MYSQL_ALLOW_EMPTY_PASSWORD: yes # Mengizinkan password kosong untuk root, "no" jika ingin mengatur password
+      MYSQL_ROOT_HOST: '%'
+      MYSQL_ROOT_PASSWORD: '' # isi password kosong sesuai keinginan
       MYSQL_DATABASE: sistem_karyawan
     volumes:
-      - ./mysql:/var/lib/mysql
+      - emplorapro_db:/var/lib/mysql
 
   phpmyadmin:
     container_name: PhpMyAdmin
-    image: phpmyadmin
+    image: phpmyadmin:latest
     restart: always
     ports:
       - "8080:80"
     environment:
       PMA_HOST: database
       PMA_USER: root
-      PMA_PASSWORD: thunderst0rm
+      PMA_PASSWORD: '' # samakan dengan database
     depends_on:
       - database
+
+volumes:
+  emplorapro_db:
+    driver: local

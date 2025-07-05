@@ -4,6 +4,7 @@ session_start();
 // Koneksi database
 $host = 'localhost';
 $user = 'root';
+// Jika menggunakan docker, pastikan password sesuai dengan yang ada di docker-compose.yaml
 $pass = '';
 $db   = 'sistem_karyawan';
 
