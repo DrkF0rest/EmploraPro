@@ -1,13 +1,13 @@
 # EmploraPro
 
 > [!NOTE]
->EmploraPro adalah aplikasi web sederhana yang dikembangkan sebagai proyek pertama saya dalam belajar pengembangan web. Aplikasi ini dirancang dengan fokus pada penerapan fitur CRUD (Create, Read, Update, Delete) serta antarmuka pengguna (UI) dan pengalaman pengguna (UX) yang baik.
+>EmploraPro adalah aplikasi web sederhana yang dikembangkan sebagai proyek pertama saya dalam belajar pengembangan web. Aplikasi ini dirancang dengan fokus pada penerapan fitur CRUD serta UI/UX yang baik.
 
 ---
 
 ## Feature
 
-- **Fungsi CRUD Lengkap**<br>Pengguna dapat dengan mudah menambah, melihat, mengedit, dan menghapus data.
+- **CRUD**<br>Pengguna dapat dengan mudah menambah, melihat, mengedit, dan menghapus data.
 - **Desain UI/UX Intuitif**<br>Antarmuka dirancang agar mudah digunakan dan nyaman untuk dinavigasi.
 - **Tata Letak Responsif**<br>Tampilan menyesuaikan berbagai ukuran layar, baik di desktop maupun perangkat mobile.
 
