@@ -26,8 +26,8 @@
  
 1. Clone repository:
     ```bash
-    git clone https://github.com/username/sistem-karyawan.git
-    cd sistem-karyawan 
+    git clone https://github.com/DrkF0rest/EmploraPro.git
+    cd EmploraPro/docker
     ```
     <br>
 2. Jalankan container:
