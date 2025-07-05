@@ -1,12 +1,11 @@
-<h1 align="center">EmploraPro</h1>
+# EmploraPro
 
----
 > [!NOTE]
 >EmploraPro adalah aplikasi web sederhana yang dikembangkan sebagai proyek pertama saya dalam belajar pengembangan web. Aplikasi ini dirancang dengan fokus pada penerapan fitur CRUD (Create, Read, Update, Delete) serta antarmuka pengguna (UI) dan pengalaman pengguna (UX) yang baik.
 
 ---
 
-<h3>✨ Feature</h3>
+## Feature
 
 - **Fungsi CRUD Lengkap**<br>Pengguna dapat dengan mudah menambah, melihat, mengedit, dan menghapus data.
 - **Desain UI/UX Intuitif**<br>Antarmuka dirancang agar mudah digunakan dan nyaman untuk dinavigasi.
@@ -14,7 +13,7 @@
 
 ---
 
-## How To Install
+### How To Install
 
 #### Local Desktop Environtment
 - Salin semua file dari folder **Application** ke direktori hosting Anda (misal: XAMPP/htdocs).
@@ -41,8 +40,8 @@
 > 3. Impor file database **(Sistem_Karyawan.sql)** ke dalam database menggunakan phpMyAdmin
 
 > [!TIP]
-> Jika anda ingin membuat password edit pada config.php
-> Jika anda menggunakan docker tambahkan juga pada docker-compose.yaml
+> - Jika anda ingin membuat password edit pada config.php
+> - Jika anda menggunakan docker tambahkan juga pada docker-compose.yaml
 
 #### Akses Aplikasi
 
@@ -50,14 +49,6 @@ Aplikasi  :	**http://[domain-anda]**
 phpmyadmin  :	**http:// [domain-anda]:8080**	user: root, password: (kosong/disesuaikan)
 
 ---
-<h3 align="left">Made With</h3>
+## Made With
 
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="20" alt="php logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="20" alt="html5 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="20" alt="css3 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="20" alt="javascript logo"  />
-</div>
+![My Skills](https://skillicons.dev/icons?i=php,js,html,css,docker)
