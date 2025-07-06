@@ -24,6 +24,8 @@ if (!$karyawan) {
 }
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $username = $conn->real_escape_string($_POST['username']);
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
     $nama_lengkap = $conn->real_escape_string($_POST['nama_lengkap']);
     $jabatan = $conn->real_escape_string($_POST['jabatan']);
     $departemen = $conn->real_escape_string($_POST['departemen']);
@@ -99,9 +101,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <?php endif; ?>
             
             <form method="POST">
+                
                 <div class="form-group">
                     <label for="username">Username</label>
-                    <input type="text" id="username" value="<?= $karyawan['username'] ?>" readonly>
+                    <input type="text" id="username" value="<?= $karyawan['username'] ?>" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Kosongkan jika tidak mengubah password">
                 </div>
                 
                 <div class="form-group">

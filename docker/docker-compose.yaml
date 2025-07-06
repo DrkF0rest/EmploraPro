@@ -11,7 +11,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ./src:/var/www/html
+      - ../Application:/var/www/html
       - ./nginx:/etc/nginx/conf.d
     depends_on:
       - php
@@ -19,11 +19,11 @@ services:
 
   php:
     build:
-      context: php/
+      context: ./php
     container_name: php
     restart: always
     volumes:
-      - ./src:/var/www/html
+      - ../Application:/var/www/html
     environment:
       - DB_HOST=database
       - DB_USER=root

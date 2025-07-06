@@ -40,6 +40,12 @@
 > 3. Impor file database **(Sistem_Karyawan.sql)** ke dalam database menggunakan phpMyAdmin
 > - Jika anda ingin membuat password pada database edit pada config.php
 > - Jika anda menggunakan docker tambahkan juga pada docker-compose.yaml
+> - Jalankan ulang Docker dengan:
+> ```bash 
+> docker compose down -v --remove-orphans 
+> docker compose up -d
+> ```
+><br>
 
   4. Login **Username: admin Password: admin**
 
