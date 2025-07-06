@@ -17,6 +17,9 @@ $bulan_ini = date('Y-m');
 $query = "SELECT COUNT(*) as hadir FROM absensi WHERE karyawan_id = $user_id AND status = 'hadir' AND DATE_FORMAT(tanggal, '%Y-%m') = '$bulan_ini'";
 $hadir_bulan_ini = $conn->query($query)->fetch_assoc()['hadir'];
 
+$query = "SELECT l.*, u.username FROM log_activity l JOIN users u ON l.user_id = u.id WHERE l.user_id = $user_id ORDER BY l.created_at DESC LIMIT 5";
+$log_activities = $conn->query($query);
+
 $conn->query("INSERT INTO log_app (user_id, login_time) VALUES ($user_id, NOW())");
 $_SESSION['log_app_id'] = $conn->insert_id;
 ?>
@@ -119,6 +122,34 @@ $_SESSION['log_app_id'] = $conn->insert_id;
                 <?php endif; ?>
             </div>
         </div>
+
+        <div class="grid-2-col">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Log Activity Terbaru</h3>
+                </div>
+                
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>User</th>
+                            <th>Aktivitas</th>
+                            <th>Waktu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php while ($log = $log_activities->fetch_assoc()): ?>
+                        <tr>
+                            <td><?= $log['username'] ?></td>
+                            <td><?= $log['activity'] ?></td>
+                            <td><?= date('d M Y H:i', strtotime($log['created_at'])) ?></td>
+                        </tr>
+                        <?php endwhile; ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
     </div>
 </body>
 </html>

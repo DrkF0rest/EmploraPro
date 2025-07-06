@@ -25,7 +25,7 @@ if (!$cuti) {
 $update_query = "UPDATE cuti SET status = '$status' WHERE id = $id";
 if ($conn->query($update_query)) {
     $admin_id = $_SESSION['user_id'];
-    $activity = "Mengubah status cuti {$cuti['nama_lengkap']} (ID: $id) menjadi $status";
+    $activity = "Mengubah status cuti {$cuti['nama_lengkap']} menjadi $status";
     $conn->query("INSERT INTO log_activity (user_id, activity) VALUES ($admin_id, '$activity')");
     
     $_SESSION['success'] = "Status cuti {$cuti['nama_lengkap']} berhasil diubah menjadi " . ucfirst($status);
